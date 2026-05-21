@@ -1,0 +1,9 @@
+{
+  "version": "1.121.0",
+  "description": "A set of custom agents for VS Code Copilot",
+  "scripts": {
+    "pull": "rm *.agent.md || true; cp ~/.copilot/agents/* ./",
+    "push": "rm ~/.copilot/agents/* || true; cp ./*.agent.md ~/.copilot/agents/",
+    "version": "npm version $(code --version | head -n 1) --no-git-tag-version"
+  }
+}
